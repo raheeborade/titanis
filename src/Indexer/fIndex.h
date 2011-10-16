@@ -26,7 +26,7 @@ using namespace std;
 
 class ForwardIndex {
 	private:
-		map<int, vector<string> > index;
+		map<int, map<string,int> > index;
 	public:
 		ForwardIndex();
 		void AddToIndex (int docId, string text);
